@@ -1,0 +1,4 @@
+---
+- name: debug a variable not defined in this role
+  debug:
+    var: test_variable

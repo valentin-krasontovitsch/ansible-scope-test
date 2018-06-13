@@ -1,0 +1,12 @@
+---
+# running the first role alone, the variable should come out as undefined
+- hosts: localhost
+  roles:
+    - first
+
+# running both roles, the variable definition from the second role flows over
+# into the first role
+- hosts: localhost
+  roles:
+    - first
+    - second
